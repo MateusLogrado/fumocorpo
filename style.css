@@ -1,0 +1,40 @@
+body{
+    background-color: rgb(197, 224, 236);
+}
+
+main{
+    text-align: center;
+}
+
+#topo{
+    background-color: rgb(129, 170, 175);
+    border: 2px solid;
+    border-radius: 12px;
+}
+
+#pri{
+    margin-top: 5px;
+    margin-left: 5px;
+    background-color: rgb(91, 133, 153);
+    border-radius: 12px;
+}
+
+#final{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+#logo{
+    margin-top: 100px;
+    width: 350px;
+    height: 250px;
+}
+
+#pnome{
+    font-size: 35px;
+    color: rgb(60, 70, 71);
+}
