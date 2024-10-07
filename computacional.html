@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./img/fumo_cabeça.png" type="image/png">
     <link rel="stylesheet" href="style.css">
+    <script src="./prog/q01.js" defer></script>
+    <script src="./prog/q02.js" defer></script>
+    <script src="./prog/q03.js" defer></script>
+    <script src="./prog/img.js" defer></script>
     <title>Computacional</title>
 </head>
 <body>
@@ -19,7 +23,37 @@
     </header>
     </div>
     <main>
-
+        <h1>parte computacional da nossa empresa</h1>
+        <h2>Sistema de ordenação com base no metado BubbleSort</h2>
+        <article>
+            <h3>Exemplo 1</h3>
+            <p>Sistema de ordenação onde gera 5 numeros aleatorios e coloca em forma crecente</p>
+            <button onclick="gerarArray1()">Gerar</button>
+            <button onclick="ordenarArray1()">Ordenar</button>
+            <br>
+            <div id="codigo01"></div>
+            <br>
+            <button onclick="img1()">Imagem do codigo</button>
+            <br>
+            <br>
+            <div id="imagem01"></div>
+            <p></p>
+        </article>
+        <article>
+            <h3>Exemplo 2</h3>
+            <p>Sistema de ordenação onde com 5 numeros predefinidos e coloca em forma decrecente</p>
+            <button onclick="ordenarArray2()">Ordenar</button>
+            <br>
+            <p>[5, 3, 1, 4, 2]</p>
+            <br>
+            <div id="codigo02"></div>
+            <br>
+            <button onclick="img2()">Imagem do codigo</button>
+            <br>
+            <br>
+            <div id="imagem02"></div>
+            <p></p>
+        </article>
     </main>
     <footer>
         <small>Fumo corporation &reg; &trade; <a href="./contato.html">Contato</a></small>
