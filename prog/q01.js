@@ -14,7 +14,7 @@ function gerarArray1(){
     }
     console.log(array)
     console.log("--------------------------")
-    codigo.innerHTML = array + "<br>"
+    codigo.innerHTML = "[" + array + "]" + "<br>"
 }
 
 function ordenarArray1(){
@@ -29,5 +29,5 @@ function ordenarArray1(){
         console.log(array)
         console.log("--------------------------")
     }
-    codigo.innerHTML += array
+    codigo.innerHTML += "[" + array + "]"
 }
