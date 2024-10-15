@@ -1,6 +1,6 @@
 1 - servidor, dns, dhcp e http, print de tela da configuração dos servidores - fiz
-2 - comunicação web, slides e fazer um resumo
-3 - explicação dos equipamentos
+2 - comunicação web, slides e fazer um resumo - fiz(?)
+3 - explicação dos equipamentos- fiz
 1, 2, 3 = serviço de rede
 4 - VisualG
 5 - mais para frente
