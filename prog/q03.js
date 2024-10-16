@@ -9,7 +9,7 @@ function numAleatorio(min, max){
 }
 
 function gerarArray3(){
-    for(let i = 0; i < 50; i++){
+    for(let i = 0; i < 8; i++){
         array2[i] = numAleatorio(1, 20)
     }
     console.log(array2)
