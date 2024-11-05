@@ -1,15 +1,15 @@
 1 - servidor, dns, dhcp e http, print de tela da configuração dos servidores - fiz
-2 - comunicação web, slides e fazer um resumo - fiz(?)
+2 - comunicação web, slides e fazer um resumo - fiz
 3 - explicação dos equipamentos- fiz
-1, 2, 3 = serviço de rede
+1, 2, 3 = serviço de rede - terminado
 4 - VisualG
 5 - mais para frente
 6 - DER e MER
 4 = algoritmos, VisualG
 5, 6 = banco de dados
 7 - arduino
-8, 9 - array, matriz e essas coisas - fiz
-10 - 
+8, 9 - array, matriz e essas coisas -
+10 - bubble selection insertion 
 
 1. Elementos, componentes e configuração de rede interna na qual servidor web está
 inserido;

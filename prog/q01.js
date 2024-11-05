@@ -14,5 +14,5 @@ function gerarFibonacci(){
 
     codigo01.innerHTML = ""
     codigo01.innerHTML += ""
-    codigo01.innerHTML += fibonacci
+    codigo01.innerHTML += "[" + fibonacci + "]"
 }
