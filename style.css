@@ -6,6 +6,10 @@ main{
     text-align: center;
 }
 
+h2{
+    color: rgb(106, 158, 182);
+}
+
 #topo{
     background-color: rgb(129, 170, 175);
     border: 2px solid;
@@ -39,7 +43,7 @@ a:hover{
     color: rgb(60, 70, 71);
 }
 
-#textop{
+.textop{
     color: rgb(60, 70, 71);   
 }
 
