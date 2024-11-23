@@ -4,6 +4,7 @@ let resposta3 = document.getElementById("resposta3")
 let resposta4 = document.getElementById("resposta4")
 let resposta5 = document.getElementById("resposta5")
 let resposta6 = document.getElementById("resposta6")
+let resposta8 = document.getElementById("resposta8")
 
 function gerar1(){
     let array = []
@@ -146,4 +147,44 @@ function ordenar3(){
     }
 
     resposta6.innerHTML += "[ " + selectionarrray + " ]" + "<br><br>"
+}
+
+let gerar7 = document.getElementById("gerar7")
+let numarray = []
+
+gerar7.addEventListener('click', ()=>{
+    let num = document.querySelector('#num').value
+
+    for(let i = 0; i < num; i++){
+        numarray[i] = i + 1
+    }
+    console.table(numarray)
+
+    let soma = 0
+    for(let i = 0; i < num; i++){
+        soma += numarray[i]
+    }
+    console.log(soma)
+
+    let pagin = document.querySelector('#arrow')
+
+    let resposta = document.createElement('div')
+    pagin.appendChild(resposta)
+
+    resposta.setAttribute('class','estilo')
+    resposta.setAttribute('id','res')
+    console.log(pagin)
+
+    resposta.textContent = `A soma do Array é: ${soma}`
+})
+
+function gerar8(){
+    let array = []
+    let num = Number(document.getElementById("num1").value)
+
+    for(let i = 0; i < num; i++){
+        array[i] = i+1
+    }
+
+    resposta8.innerHTML = "[ " + array + " ]"
 }
