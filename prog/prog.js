@@ -1,6 +1,9 @@
 let resposta1 = document.getElementById("resposta1")
 let resposta2 = document.getElementById("resposta2")
 let resposta3 = document.getElementById("resposta3")
+let resposta4 = document.getElementById("resposta4")
+let resposta5 = document.getElementById("resposta5")
+let resposta6 = document.getElementById("resposta6")
 
 function gerar1(){
     let array = []
@@ -69,4 +72,78 @@ function gerar3(){
 
     resposta3.innerHTML += "Soma dos pares: " + somaPar + "<br><br>"
     resposta3.innerHTML += "Soma dos impares: " + somaImpar + "<br><br>"
+}
+
+let bubblearrray = []
+let insertionarrray = []
+let selectionarrray = []
+
+function gerar4(){
+    for(let i = 0; i < 10; i++){
+        bubblearrray[i] = random(1,20)
+    }
+
+    resposta4.innerHTML = "[ " + bubblearrray + " ]" + "<br><br>"
+}
+
+function ordenar1(){
+    for(let j = bubblearrray.length-1; j > 0; j--){
+        for(let i = 0; i < bubblearrray.length-1; i++){
+            if(bubblearrray[i] > bubblearrray[i+1]){
+                let valor_atual = bubblearrray[i]
+                bubblearrray[i] = bubblearrray[i+1]
+                bubblearrray[i+1] = valor_atual
+            }
+        }
+    }
+
+    resposta4.innerHTML += "[ " + bubblearrray + " ]" + "<br><br>"
+}
+
+function gerar5(){
+    for(let i = 0; i < 10; i++){
+        insertionarrray[i] = random(1,20)
+    }
+
+    resposta5.innerHTML = "[ " + insertionarrray + " ]" + "<br><br>"
+}
+
+function ordenar2(){
+    for(let i = 1; i < insertionarrray.length; i++){
+        let j = i - 1
+        let valor_atual = insertionarrray[i]
+        while(j >= 0 && valor_atual < insertionarrray[j]){
+            insertionarrray[j+1] = insertionarrray[j]
+            j--
+        }
+        insertionarrray[j+1] = valor_atual
+    }
+
+    resposta5.innerHTML += "[ " + insertionarrray + " ]" + "<br><br>"
+}
+
+function gerar6(){
+    for(let i = 0; i < 10; i++){
+        selectionarrray[i] = random(1,20)
+    }
+
+    resposta6.innerHTML = "[ " + selectionarrray + " ]" + "<br><br>"
+}
+
+function ordenar3(){
+    for(let i = 0; i < selectionarrray.length; i++){
+        let menor = i
+        for(let j = i+1; j < selectionarrray.length; j++){
+            if(selectionarrray[j] < selectionarrray[menor]){
+                menor = j
+            }
+        }
+        if(i != menor){
+            let valor_atual = selectionarrray[i]
+            selectionarrray[i] = selectionarrray[menor]
+            selectionarrray[menor] = valor_atual
+        }
+    }
+
+    resposta6.innerHTML += "[ " + selectionarrray + " ]" + "<br><br>"
 }
