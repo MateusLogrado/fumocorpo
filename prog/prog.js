@@ -6,6 +6,12 @@ let resposta5 = document.getElementById("resposta5")
 let resposta6 = document.getElementById("resposta6")
 let resposta8 = document.getElementById("resposta8")
 let resposta9 = document.getElementById("resposta9")
+let resposta10 = document.getElementById("resposta10")
+let resposta11 = document.getElementById("resposta11")
+let resposta12 = document.getElementById("resposta12")
+let resposta13 = document.getElementById("resposta13")
+let resposta14 = document.getElementById("resposta14")
+let resposta15 = document.getElementById("resposta15")
 
 function gerar1(){
     let array = []
@@ -201,4 +207,73 @@ function gerar9(){
     }
 
     resposta9.innerHTML = "[ " + array + " ]"
+}
+
+function gerar10(){
+    let num3 = Number(document.getElementById("num3").value)
+
+    if(num3 > -1){
+        resposta10.innerHTML = "Esse numero é positivo"
+    }
+}
+
+function gerar11(){
+    let num4 = Number(document.getElementById("num4").value)
+
+    if(num4 > -1){
+        resposta11.innerHTML = "Esse numero é positivo"
+    }else{
+        resposta11.innerHTML = "Esse numero é negativo"
+    }
+}
+
+function gerar12(){
+    let num5 = Number(document.getElementById("num5").value)
+
+    if(num5 > 0){
+        resposta12.innerHTML = "Esse numero é positivo"
+    }else if(num4 < 0){
+        resposta12.innerHTML = "Esse numero é negativo"
+    }else{
+        resposta12.innerHTML = "Esse numero é neutro ou zero"
+    }
+}
+
+let array2 = []
+
+
+function gerar13(){
+    for(let i = 0; i < 10; i++){
+        array2[i] = random(1,30)
+    }
+
+    resposta13.innerHTML = "[ " + array2 + " ]"
+}
+
+function crescente(){
+    for(let i = 1; i < array2.length; i++){
+        let j = i-1
+        let valor_atual = array2[i]
+        while(j >= 0 && valor_atual < array2[j]){
+            array2[j+1] = array2[j]
+            j--
+        }
+        array2[j+1] = valor_atual
+    }
+
+    resposta14.innerHTML = "[ " + array2 + " ]"
+}
+
+function decrescente() {  
+    for (let i = 1; i < array2.length; i++) {  
+        let j = i - 1;  
+        let valor_atual = array2[i] 
+        while (j >= 0 && valor_atual > array2[j]) {  
+            array2[j + 1] = array2[j]
+            j--;  
+        }  
+        array2[j + 1] = valor_atual
+    }  
+
+    resposta15.innerHTML = "[ " + array2 + " ]"
 }
