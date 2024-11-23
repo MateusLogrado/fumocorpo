@@ -12,6 +12,9 @@ let resposta12 = document.getElementById("resposta12")
 let resposta13 = document.getElementById("resposta13")
 let resposta14 = document.getElementById("resposta14")
 let resposta15 = document.getElementById("resposta15")
+let resposta16 = document.getElementById("resposta16")
+let resposta17 = document.getElementById("resposta17")
+let resposta18 = document.getElementById("resposta18")
 
 function gerar1(){
     let array = []
@@ -276,4 +279,40 @@ function decrescente() {
     }  
 
     resposta15.innerHTML = "[ " + array2 + " ]"
+}
+
+let array3 = []
+
+function gerar14(){
+    for(let i = 0; i < 10; i++){
+        array3[i] = random(1,20)
+    }
+
+    resposta16.innerHTML = "[ " + array3 + " ]"
+}
+
+function crescente1(){
+    for(let j = array3.length-1; j > 0; j--){
+        for(let i = 0; i < array3.length-1; i++){
+            if(array3[i] > array3[i+1]){
+                let valor_atual = array3[i]
+                array3[i] = array3[i+1]
+                array3[i+1] = valor_atual
+            }
+        }
+    }
+    resposta17.innerHTML = "[ " + array3 + " ]"
+}
+
+function decrescente1(){
+    for(let j = array3.length-1; j > 0; j--){
+        for(let i = 0; i < array3.length-1; i++){
+            if(array3[i] < array3[i+1]){
+                let valor_atual = array3[i]
+                array3[i] = array3[i+1]
+                array3[i+1] = valor_atual
+            }
+        }
+    }
+    resposta18.innerHTML = "[ " + array3 + " ]"
 }
