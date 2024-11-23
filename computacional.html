@@ -3,12 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./img/fumo_cabeça.png" type="image/png">
+    <link rel="shortcut icon" href="./img_geral/fumo_cabeça.png" type="image/png">
+    <script src="./prog/prog.js" defer></script>
     <link rel="stylesheet" href="style.css">
-    <script src="./prog/q01.js" defer></script>
-    <script src="./prog/q02.js" defer></script>
-    <script src="./prog/q03.js" defer></script>
-    <script src="./prog/img.js" defer></script>
     <title>Computacional</title>
 </head>
 <body>
@@ -25,49 +22,35 @@
         </header>
     </div>
     <main>
-        <h1>parte computacional da nossa empresa</h1>
-        <h2>Exemplos de sistemas que conseguimos fazer</h2>
+        <h1>Exemplos de programação que fazemos</h1>
         <article>
-            <h3>Fibonacci</h3>
-            <p>Sistema que gera uma sequencia de fibonacci</p>
-            <button onclick="gerarFibonacci()">Gerar</button>
-            <br>
-            <div id="codigo01"></div>
-            <br>
-            <button onclick="img1()">Imagem do codigo</button>
-            <br>
-            <br>
-            <div id="imagem01"></div>
-        </article>
-        <article>
-            <h3>Exemplo 2</h3>
-            <p>Sistema de ordenação onde com 5 numeros predefinidos e coloca em forma decrecente</p>
-            <button onclick="ordenarArray2()">Ordenar</button>
-            <br>
-            <br>
-            <div id="codigo02"></div>
-            <br>
-            <button onclick="img2()">Imagem do codigo</button>
-            <br>
-            <br>
-            <div id="imagem02"></div>
-        </article>
-        <article>
-            <h3>Bubble Sort</h3>
-            <p>Sistema de ordenação onde gera 8 numeros aleatorios e coloca em forma decrecente</p>
-            <button onclick="gerarArray3()">Gerar</button>
-            <button onclick="ordenarArray3()">Ordenar</button>
-            <br>
-            <div id="codigo03"></div>
-            <br>
-            <button onclick="img3()">Imagem do codigo</button>
-            <br>
-            <br>
-            <div id="imagem03"></div>
+            <h2>3 exemplos de programação com array</h2>
+            <div class="array">
+                <label for="">Exemplo 1</label>
+                <br><br>
+                <button onclick="gerar1()">Gerar</button>
+                <div id="resposta1"></div>
+                <br><br>
+            </div>
+            <div class="array">
+                <label for="">Exemplo 2</label>
+                <br><br>
+                <button onclick="gerar2()">Gerar</button>
+                <div id="resposta2"></div>
+                <br><br>
+            </div>
+            <div class="array">
+                <label for="">Exemplo 3</label>
+                <br><br>
+                <button onclick="gerar3()">Gerar</button>
+                <div id="resposta3"></div>
+                <br><br>
+            </div>
         </article>
     </main>
     <footer>
-        <small>Fumo corporation &reg; &trade; <a href="./contato.html">Contato</a></small>
+        <hr>
+        <small>Fumo corporation &reg; &trade; <a href="https://github.com/MateusLogrado">Git hub</a></small>
     </footer>
 </body>
 </html>
