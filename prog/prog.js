@@ -5,6 +5,7 @@ let resposta4 = document.getElementById("resposta4")
 let resposta5 = document.getElementById("resposta5")
 let resposta6 = document.getElementById("resposta6")
 let resposta8 = document.getElementById("resposta8")
+let resposta9 = document.getElementById("resposta9")
 
 function gerar1(){
     let array = []
@@ -187,4 +188,17 @@ function gerar8(){
     }
 
     resposta8.innerHTML = "[ " + array + " ]"
+}
+
+function gerar9(){
+    let num2 = Number(document.getElementById("num2").value)
+    let array = []
+    let i = 0
+
+    while(i < num2){
+        array[i] = i+1
+        i++
+    }
+
+    resposta9.innerHTML = "[ " + array + " ]"
 }
