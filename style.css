@@ -71,5 +71,39 @@ p{
 }
 
 @media (max-width: 600px){
-    
+    #pri{
+        width: 50px;
+    }
+
+    #pnome{
+        font-size: 50px;
+    }
+
+    h2{
+        font-size: 40px;
+    }
+
+    p{
+        font-size: 30px;
+    }
+
+    #mapa{
+        width: 360px;
+    }
+
+    #video{
+        width: 360px;
+    }
+
+    small{
+        font-size: 25px;
+    }
+
+    .borda{
+        width: 350px;
+    }
+
+    .array{
+        margin-left: 0px;
+    }
 }
